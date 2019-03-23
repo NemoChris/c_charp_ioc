@@ -5,6 +5,6 @@ bin/
 /vs2015/MutiThreadingPrograming/.vs/MutiThreadingPrograming/v15/Server/sqlite3
 *.dtbcache
 /.vs/Ruanmou.Project/v15/Server/sqlite3
-/.vs/*
+.vs/
 *.pdb
 /packages
