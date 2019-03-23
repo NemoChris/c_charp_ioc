@@ -1,0 +1,10 @@
+*.exe
+*.suo
+obj/
+bin/
+/vs2015/MutiThreadingPrograming/.vs/MutiThreadingPrograming/v15/Server/sqlite3
+*.dtbcache
+/.vs/Ruanmou.Project/v15/Server/sqlite3
+/packages/Unity.Interception.Configuration.5.9.3/lib/netstandard2.0/*.pdb
+/packages/Unity.Interception.Configuration.5.9.3/lib/netcoreapp2.0/*.pdb
+/packages/Unity.Interception.Configuration.5.9.3/lib/net45/*.pdb
