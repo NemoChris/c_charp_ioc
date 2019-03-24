@@ -22,7 +22,7 @@ namespace Ruanmou.Project.Demo
 			//因此先构造C再构造B再构造A，程序依赖于细节，可扩展性差
 			IDAL.IBaseDAL baseDAL = new Ruamou.DAL.BaseDAL();
 			IBLL.IBaseBll baseBLL = new Ruanmou.BLL.BaseBll(baseDAL, 1);
-			IPhone phone = ObjectFactory.CreatePhone(baseBLL);
+			IPhone phone = ObjectFactory.CreatePhone(baseBLL);			
 		}
 	}
 }

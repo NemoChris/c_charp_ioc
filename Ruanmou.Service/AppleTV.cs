@@ -9,9 +9,10 @@ namespace Ruanmou.Service
 {
     public class AppleTV : ITV
     {
-        public AppleTV(int id)
+		public int Id { get; set; }
+		public AppleTV(int id)
         {
-
+			this.Id = id;
         }
         public void Show()
         {

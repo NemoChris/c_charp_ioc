@@ -15,12 +15,12 @@ namespace Ruanmou.Service
         public IHeadphone iHeadphone { get; set; }
         public IPower iPower { get; set; }
 
-        //public AndroidPhone()
-        //{
-        //    Console.WriteLine("{0}构造函数", this.GetType().Name);
-        //}
-        
-        public AndroidPhone(AbstractPad pad, IHeadphone headphone)
+		public AndroidPhone()
+		{
+			Console.WriteLine("{0}构造函数", this.GetType().Name);
+		}
+
+		public AndroidPhone(AbstractPad pad, IHeadphone headphone)
         {
             Console.WriteLine("{0}构造函数", this.GetType().Name);
         }
