@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demo\Demo4.cs" />
     <Compile Include="Demo\Demo3.cs" />
     <Compile Include="Demo\Demo2.cs" />
     <Compile Include="Demo\Demo1.cs" />
@@ -74,8 +75,12 @@
     <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="CfgFiles\Unity.Config">

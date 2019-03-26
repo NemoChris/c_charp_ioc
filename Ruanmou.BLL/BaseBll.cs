@@ -12,7 +12,12 @@ namespace Ruanmou.BLL
     public class BaseBll : IBaseBll
     {
         private IBaseDAL _baseDAL = null;
-        public BaseBll(IBaseDAL baseDAL, int id)
+		public BaseBll(IBaseDAL baseDAL)
+		{
+			Console.WriteLine($"{nameof(BaseBll)}被构造。。。");
+			this._baseDAL = baseDAL;
+		}
+		public BaseBll(IBaseDAL baseDAL, int id)
         {
             Console.WriteLine($"{nameof(BaseBll)}被构造。。。{id}。");
             this._baseDAL = baseDAL;

@@ -13,5 +13,6 @@ namespace Ruanmou.Interface
         IMicrophone iMicrophone { get; set; }
         IHeadphone iHeadphone { get; set; }
         IPower iPower { get; set; }
-    }
+		IBLL.IBaseBll iBLL { get; set; }		
+	}
 }

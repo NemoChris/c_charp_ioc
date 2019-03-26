@@ -71,6 +71,10 @@
       <Project>{3280d2f9-5b0c-4144-add2-0d6a7137f669}</Project>
       <Name>Ruanmou.Framework</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ruanmou.IBLL\Ruanmou.IBLL.csproj">
+      <Project>{b96ae3e6-cb95-4626-91c0-55368e93f2bf}</Project>
+      <Name>Ruanmou.IBLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

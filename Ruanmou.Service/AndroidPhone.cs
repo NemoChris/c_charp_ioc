@@ -14,6 +14,7 @@ namespace Ruanmou.Service
         public IMicrophone iMicrophone { get; set; }
         public IHeadphone iHeadphone { get; set; }
         public IPower iPower { get; set; }
+		public IBaseBll iBLL { get; set; }
 
 		public AndroidPhone()
 		{
@@ -30,10 +31,10 @@ namespace Ruanmou.Service
         {
             Console.WriteLine("{0}构造函数", this.GetType().Name);
         }
-        public AndroidPhone(IBaseBll baseBll)
-        {
-            Console.WriteLine("{0}构造函数", this.GetType().Name);
-        }
+        //public AndroidPhone(IBaseBll baseBll)
+        //{
+        //    Console.WriteLine("{0}构造函数", this.GetType().Name);
+        //}
 
         public void Call()
         {
