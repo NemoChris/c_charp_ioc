@@ -30,7 +30,7 @@ namespace Ruanmou.Service
 		//}
 
 
-		[InjectionConstructor]//构造函数注入：默认找参数最多的构造函数
+		//[InjectionConstructor]//构造函数注入：默认找参数最多的构造函数
         public ApplePhone(IHeadphone headphone)
         {
             this.iHeadphone = headphone;

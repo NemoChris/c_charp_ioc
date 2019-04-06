@@ -29,12 +29,7 @@ namespace Ruanmou.Project.Demo
 			Console.WriteLine($"phone.iMicrophone==null? {phone.iMicrophone == null}");
 			Console.WriteLine($"phone.iPower==null?      {phone.iPower == null}");
 			Console.WriteLine($"phone.iBLL==null?      {phone.iBLL == null}");
-
-
-			container.RegisterType<IPhone, AndroidPhone>("android");
-			container.RegisterType<IPhone, ApplePhone>("apple");
-			var android = container.Resolve<IPhone>("android");
-			var apple = container.Resolve<IPhone>("apple");
+		
 			var _ = 0;
 		}
 	}

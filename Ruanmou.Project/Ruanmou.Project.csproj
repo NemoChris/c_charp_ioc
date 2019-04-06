@@ -64,10 +64,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\Demo4.cs" />
-    <Compile Include="Demo\Demo3.cs" />
-    <Compile Include="Demo\Demo2.cs" />
-    <Compile Include="Demo\Demo1.cs" />
+    <Compile Include="BasicDemo\Demo6.cs" />
+    <Compile Include="BasicDemo\Demo5.cs" />
+    <Compile Include="BasicDemo\Demo4.cs" />
+    <Compile Include="BasicDemo\Demo3.cs" />
+    <Compile Include="BasicDemo\Demo2.cs" />
+    <Compile Include="BasicDemo\Demo1.cs" />
+    <Compile Include="ConfigDemo\Demo1.cs" />
     <Compile Include="IOCTest.cs" />
     <Compile Include="ObjectFactory.cs" />
     <Compile Include="Program.cs" />
