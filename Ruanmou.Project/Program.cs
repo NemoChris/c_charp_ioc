@@ -50,8 +50,17 @@ namespace Ruanmou.Project
 				#endregion
 
 				#region Unity容器的配置
+
 				//Demo1 - 通过配置文件创建对象
-				ConfigDemo.Demo1.Run();
+				//ConfigDemo.Demo1.Run();
+
+				//Demo2 - 通过修改配置文件修改下端的实现而不影响上端
+				//上端只依赖于抽象而不依赖于具体的细节
+				//上端和下端都依赖于容器
+				//容器依赖于配置文件
+				//通过修改配置文件即可实现上端和下端无缝的切换
+				ConfigDemo.Demo2.Run();
+
 				#endregion
 
 			}

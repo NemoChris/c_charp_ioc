@@ -70,6 +70,7 @@
     <Compile Include="BasicDemo\Demo3.cs" />
     <Compile Include="BasicDemo\Demo2.cs" />
     <Compile Include="BasicDemo\Demo1.cs" />
+    <Compile Include="ConfigDemo\Demo2.cs" />
     <Compile Include="ConfigDemo\Demo1.cs" />
     <Compile Include="IOCTest.cs" />
     <Compile Include="ObjectFactory.cs" />

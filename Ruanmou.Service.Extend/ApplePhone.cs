@@ -1,4 +1,5 @@
-﻿using Ruanmou.Interface;
+﻿using Ruanmou.IBLL;
+using Ruanmou.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,20 +9,22 @@ using Unity;
 
 namespace Ruanmou.Service
 {
-    public class ApplePhoneUpdate : IPhone
+    public class ApplePhone : IPhone
     {
         [Dependency]//属性注入
         public IMicrophone iMicrophone { get; set; }
         public IHeadphone iHeadphone { get; set; }
         public IPower iPower { get; set; }
+		[Dependency]//属性注入
+		public IBaseBll iBLL { get; set; }
 
-        public ApplePhoneUpdate()
+		public ApplePhone()
         {
             Console.WriteLine("{0}构造函数Update", this.GetType().Name);
         }
 
         [InjectionConstructor]//构造函数注入：默认找参数最多的构造函数
-        public ApplePhoneUpdate(IHeadphone headphone)
+        public ApplePhone(IHeadphone headphone)
         {
             this.iHeadphone = headphone;
             Console.WriteLine("{0} 带参数构造函数", this.GetType().Name);

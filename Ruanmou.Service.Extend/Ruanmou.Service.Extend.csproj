@@ -67,6 +67,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ruanmou.IBLL\Ruanmou.IBLL.csproj">
+      <Project>{b96ae3e6-cb95-4626-91c0-55368e93f2bf}</Project>
+      <Name>Ruanmou.IBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ruanmou.Interface\Ruanmou.Interface.csproj">
       <Project>{589711a9-6f8e-4741-a10c-5c6d84de27b0}</Project>
       <Name>Ruanmou.Interface</Name>
