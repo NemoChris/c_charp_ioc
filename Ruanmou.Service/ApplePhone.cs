@@ -1,4 +1,5 @@
-﻿using Ruanmou.IBLL;
+﻿using Ruanmou.Framework.AOP;
+using Ruanmou.IBLL;
 using Ruanmou.Interface;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using Unity;
 
 namespace Ruanmou.Service
 {
-    public class ApplePhone : IPhone
+	public class ApplePhone : IPhone
     {
         [Dependency]//属性注入
         public IMicrophone iMicrophone { get; set; }
@@ -39,7 +40,7 @@ namespace Ruanmou.Service
 
         public void Call()
         {
-            Console.WriteLine("{0}打电话", this.GetType().Name); ;
+            Console.WriteLine("{0}打电话", this.GetType().Name);
         }
 
         [InjectionMethod]//方法注入
@@ -47,5 +48,22 @@ namespace Ruanmou.Service
         {
             this.iPower = power;
         }
-    }
+
+		public void SendMsg()
+		{
+			MsgPrePare();
+			GetReceivePerson();
+			Console.WriteLine("{0}发短信", this.GetType().Name);
+		}
+
+		private void MsgPrePare()
+		{
+			Console.WriteLine("{0}信号准备", this.GetType().Name);
+		}
+
+		protected void GetReceivePerson()
+		{
+			Console.WriteLine("{0}获取接受人", this.GetType().Name);
+		}
+	}
 }

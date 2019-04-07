@@ -40,5 +40,10 @@ namespace Ruanmou.Service
         {
             Console.WriteLine("{0}打电话", this.GetType().Name); ;
         }
-    }
+
+		public void SendMsg()
+		{
+			Console.WriteLine("{0}发短信", this.GetType().Name);
+		}
+	}
 }

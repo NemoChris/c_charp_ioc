@@ -59,7 +59,18 @@ namespace Ruanmou.Project
 				//上端和下端都依赖于容器
 				//容器依赖于配置文件
 				//通过修改配置文件即可实现上端和下端无缝的切换
-				ConfigDemo.Demo2.Run();
+				//ConfigDemo.Demo2.Run();
+
+				#endregion
+
+				#region Unity Aop的实现 
+
+				//BUG:进不去Aop的方法，目前没找到问题
+				//Demo1 - 给类添加特性实现AOP
+				//AopDemo.Demo1.Run();
+
+				//Demo2 - 通过配置文件实现Aop
+				AopDemo.Demo2.Run();
 
 				#endregion
 

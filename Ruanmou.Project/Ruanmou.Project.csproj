@@ -64,6 +64,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AopDemo\Demo2.cs" />
+    <Compile Include="AopDemo\Demo1.cs" />
     <Compile Include="BasicDemo\Demo6.cs" />
     <Compile Include="BasicDemo\Demo5.cs" />
     <Compile Include="BasicDemo\Demo4.cs" />

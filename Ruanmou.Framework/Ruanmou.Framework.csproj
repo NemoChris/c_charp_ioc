@@ -66,6 +66,7 @@
     <Compile Include="AOP\LogBeforeBehavior.cs" />
     <Compile Include="AOP\ParameterCheckBehavior.cs" />
     <Compile Include="AOP\SmsBehavior.cs" />
+    <Compile Include="AOP\UnityAopAttribute.cs" />
     <Compile Include="DIOC\ElevenContainer.cs" />
     <Compile Include="DIOC\ElevenInjectionConstructorAttribute.cs" />
     <Compile Include="DIOC\RegisterInfo.cs" />
